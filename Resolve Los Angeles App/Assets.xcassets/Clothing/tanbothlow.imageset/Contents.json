@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "logo-small.png",
+      "filename" : "tanbothlow.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "logo-medium.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "logo-large.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

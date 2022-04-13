@@ -7,118 +7,109 @@
 
 import SwiftUI
 
-//------------BODY
+//-----------NAVIGATION
 struct ContentView: View {
-    
-    @State private var playerCard = "card5"
-    @State private var cpuCard = "card9"
-    @State private var playerScore = 0
-    @State private var cpuScore = 0
-
-    
     var body: some View {
         
-        ZStack{
-            
-        Color("background")
-            .edgesIgnoringSafeArea(.all)
-            
-                VStack {
+        NavigationView{
+            ZStack{
+                Color("background")
+                    .edgesIgnoringSafeArea(.all)
+                    .navigationBarHidden(true)
+                VStack{
+                    
+//----------GIF
+                    Group{
+                        Spacer()
+                        Spacer()
+                        Spacer()
+                    }
+                    
                     GifImage("spinslow")
                         .frame(width: 175, height: 175)
-                    
+                            
                     Group{
                         Spacer()
+                        Spacer()
+                        Spacer()
+                        Spacer()
+                        Spacer()
                     }
-                    
-                
-//----------SHOP
-                    
-                    Button(action: {
-                        //Generate a random number between 2...14
-                        let playerRand = Int.random(in: 2...14)
-                        let cpuRand = Int.random(in: 2...14)
-                        
-                        //Update the cards
-                        playerCard = "card" + String(playerRand)
-                        cpuCard = "card" + String(cpuRand)
-                        
-                        //Update the score
-                        if playerRand > cpuRand {
-                        playerScore += 1
-                        }else if cpuRand > playerRand{
-                        cpuScore += 1
-                        }
-                        
-                    }, label: {
+//---------BUTTONS
+                    NavigationLink(destination: ShopView()){
                         Text("SHOP")
-                            .foregroundColor(Color.white)
-                    })
-                    
-                    Group{
-                        Spacer()
+                            .foregroundColor(Color.black)
+                            .frame(maxWidth: .infinity, maxHeight: 65)
+                            .background(Color.white)
+                            .cornerRadius(15)
+                            .padding([.leading, .trailing], 10)
+                            .padding(.bottom, 7)
                     }
                     
-//-----------MISSION
-                    Button(action: {
-                        //Generate a random number between 2...14
-                        let playerRand = Int.random(in: 2...14)
-                        let cpuRand = Int.random(in: 2...14)
-                        
-                        //Update the cards
-                        playerCard = "card" + String(playerRand)
-                        cpuCard = "card" + String(cpuRand)
-                        
-                        //Update the score
-                        if playerRand > cpuRand {
-                        playerScore += 1
-                        }else if cpuRand > playerRand{
-                        cpuScore += 1
-                        }
-                        
-                    }, label: {
+                    NavigationLink(destination: MissionView()){
                         Text("MISSION")
-                            .foregroundColor(Color.white)
-                    })
+                            .foregroundColor(Color.black)
+                            .frame(maxWidth: .infinity, maxHeight: 65)
+                            .background(Color.white)
+                            .cornerRadius(15)
+                            .padding([.leading, .trailing], 10)
+                            .padding(.bottom, 7)
+                    }
                     
+                    NavigationLink(destination: OurStoryView()){
+                        Text("OUR STORY")
+                            .foregroundColor(Color.black)
+                            .frame(maxWidth: .infinity, maxHeight: 65)
+                            .background(Color.white)
+                            .cornerRadius(15)
+                            .padding([.leading, .trailing], 10)
+                            .padding(.bottom, 7)
+                    }
                     
-                    Group{
-                        Spacer()
+                    NavigationLink(destination: DocumentationView()){
+                        Text("NONPROFIT DOCUMENTATION")
+                            .foregroundColor(Color.black)
+                            .frame(maxWidth: .infinity, maxHeight: 65)
+                            .background(Color.white)
+                            .cornerRadius(15)
+                            .padding([.leading, .trailing], 10)
+                            .padding(.bottom, 7)
+                    }
+                    
+                    NavigationLink(destination: ContactUsView()){
+                        Text("CONTACT US")
+                            .foregroundColor(Color.black)
+                            .frame(maxWidth: .infinity, maxHeight: 65)
+                            .background(Color.white)
+                            .cornerRadius(15)
+                            .padding([.leading, .trailing], 10)
+                            .padding(.bottom, 10)
                     }
                     
                     
-//-----------OUR STORY
-                    Button(action: {
-                        //Generate a random number between 2...14
-                        let playerRand = Int.random(in: 2...14)
-                        let cpuRand = Int.random(in: 2...14)
-                        
-                        //Update the cards
-                        playerCard = "card" + String(playerRand)
-                        cpuCard = "card" + String(cpuRand)
-                        
-                        //Update the score
-                        if playerRand > cpuRand {
-                        playerScore += 1
-                        }else if cpuRand > playerRand{
-                        cpuScore += 1
-                        }
-                        
-                    }, label: {
-                        Text("OUR STORY")
-                            .foregroundColor(Color.white)
-                    })
                     
                     
-                Group{
-            Spacer()
-            Spacer()
+                }
+                
             }
-                    
+            
         }
-        }
+        
+        
+        
+        
     }
 }
+
+
+
+    
+
+
+
+
+
+
 
 
 struct ContentView_Previews: PreviewProvider {
