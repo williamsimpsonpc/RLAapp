@@ -19,6 +19,6 @@ var productList = [Product(name: "Tan Hooded Sweatshirt", image: "tanbothlow", p
                    Product(name: "Grey Hooded Sweatshirt", image: "greybothlow", price: 30),
                    Product(name: "Grey Hooded Sweatshirt with Graphic", image: "greybothgraphiclow", price: 50),
                    Product(name: "Black Hooded Sweatshirt", image: "blackbothlow", price: 30),
-                   Product(name: "Black Hooded Sweatshirt with Graphic", image: "blackbackgraphiclow", price: 50),
+                   Product(name: "Black Hooded Sweatshirt with Graphic", image: "blackbothgraphiclow", price: 50),
 ]
 

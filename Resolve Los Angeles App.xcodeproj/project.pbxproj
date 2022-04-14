@@ -12,6 +12,10 @@
 		EB19BA612807717700D4426A /* OurStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB19BA602807717700D4426A /* OurStoryView.swift */; };
 		EB19BA632807722100D4426A /* DocumentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB19BA622807722100D4426A /* DocumentationView.swift */; };
 		EB19BA652807725E00D4426A /* ContactUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB19BA642807725E00D4426A /* ContactUsView.swift */; };
+		EB19BA672807983000D4426A /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB19BA662807983000D4426A /* CartButton.swift */; };
+		EB19BA6928079CAE00D4426A /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB19BA6828079CAE00D4426A /* CartView.swift */; };
+		EB19BA6B28079DAC00D4426A /* CartMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB19BA6A28079DAC00D4426A /* CartMonitor.swift */; };
+		EB19BA6D2807AFA100D4426A /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB19BA6C2807AFA100D4426A /* ProductRow.swift */; };
 		EB30906427FE086800A5C045 /* Resolve_Los_Angeles_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30906327FE086800A5C045 /* Resolve_Los_Angeles_AppApp.swift */; };
 		EB30906627FE086800A5C045 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30906527FE086800A5C045 /* ContentView.swift */; };
 		EB30906827FE086A00A5C045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB30906727FE086A00A5C045 /* Assets.xcassets */; };
@@ -28,6 +32,10 @@
 		EB19BA602807717700D4426A /* OurStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurStoryView.swift; sourceTree = "<group>"; };
 		EB19BA622807722100D4426A /* DocumentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentationView.swift; sourceTree = "<group>"; };
 		EB19BA642807725E00D4426A /* ContactUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsView.swift; sourceTree = "<group>"; };
+		EB19BA662807983000D4426A /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
+		EB19BA6828079CAE00D4426A /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		EB19BA6A28079DAC00D4426A /* CartMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartMonitor.swift; sourceTree = "<group>"; };
+		EB19BA6C2807AFA100D4426A /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		EB30906027FE086800A5C045 /* Resolve Los Angeles App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Resolve Los Angeles App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB30906327FE086800A5C045 /* Resolve_Los_Angeles_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolve_Los_Angeles_AppApp.swift; sourceTree = "<group>"; };
 		EB30906527FE086800A5C045 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +61,13 @@
 		EB19BA5B280760C400D4426A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EB30906527FE086800A5C045 /* ContentView.swift */,
+				EB19BA5C2807631D00D4426A /* ShopView.swift */,
+				EB19BA5E2807711C00D4426A /* MissionView.swift */,
+				EB19BA602807717700D4426A /* OurStoryView.swift */,
+				EB19BA642807725E00D4426A /* ContactUsView.swift */,
+				EB19BA622807722100D4426A /* DocumentationView.swift */,
+				EB19BA6828079CAE00D4426A /* CartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -78,18 +93,13 @@
 			children = (
 				EB30906327FE086800A5C045 /* Resolve_Los_Angeles_AppApp.swift */,
 				EBE96C95280671A000560DD6 /* spinslow.gif */,
-				EB30906527FE086800A5C045 /* ContentView.swift */,
-				EBE96C97280672B900560DD6 /* GifImage.swift */,
-				EB19BA5C2807631D00D4426A /* ShopView.swift */,
-				EB19BA5E2807711C00D4426A /* MissionView.swift */,
-				EB19BA602807717700D4426A /* OurStoryView.swift */,
-				EB19BA622807722100D4426A /* DocumentationView.swift */,
-				EB19BA642807725E00D4426A /* ContactUsView.swift */,
 				EB19BA5B280760C400D4426A /* Views */,
+				EBE96C97280672B900560DD6 /* GifImage.swift */,
 				EBE96C9E280756F100560DD6 /* Componenets */,
 				EBE96C9B2807555E00560DD6 /* Models */,
 				EB30906727FE086A00A5C045 /* Assets.xcassets */,
 				EB30906927FE086A00A5C045 /* Preview Content */,
+				EB19BA6A28079DAC00D4426A /* CartMonitor.swift */,
 			);
 			path = "Resolve Los Angeles App";
 			sourceTree = "<group>";
@@ -114,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				EBE96C9F2807571F00560DD6 /* ProductCard.swift */,
+				EB19BA662807983000D4426A /* CartButton.swift */,
+				EB19BA6C2807AFA100D4426A /* ProductRow.swift */,
 			);
 			path = Componenets;
 			sourceTree = "<group>";
@@ -193,11 +205,15 @@
 				EB30906627FE086800A5C045 /* ContentView.swift in Sources */,
 				EB19BA5F2807711C00D4426A /* MissionView.swift in Sources */,
 				EB19BA652807725E00D4426A /* ContactUsView.swift in Sources */,
+				EB19BA6D2807AFA100D4426A /* ProductRow.swift in Sources */,
 				EB19BA5D2807631D00D4426A /* ShopView.swift in Sources */,
 				EBE96C9D2807557F00560DD6 /* Product.swift in Sources */,
+				EB19BA6928079CAE00D4426A /* CartView.swift in Sources */,
 				EB30906427FE086800A5C045 /* Resolve_Los_Angeles_AppApp.swift in Sources */,
 				EBE96CA02807571F00560DD6 /* ProductCard.swift in Sources */,
 				EB19BA612807717700D4426A /* OurStoryView.swift in Sources */,
+				EB19BA6B28079DAC00D4426A /* CartMonitor.swift in Sources */,
+				EB19BA672807983000D4426A /* CartButton.swift in Sources */,
 				EB19BA632807722100D4426A /* DocumentationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
