@@ -16,6 +16,8 @@
 		EB19BA6928079CAE00D4426A /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB19BA6828079CAE00D4426A /* CartView.swift */; };
 		EB19BA6B28079DAC00D4426A /* CartMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB19BA6A28079DAC00D4426A /* CartMonitor.swift */; };
 		EB19BA6D2807AFA100D4426A /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB19BA6C2807AFA100D4426A /* ProductRow.swift */; };
+		EB2DAD682829BEF600105730 /* DonateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2DAD672829BEF600105730 /* DonateView.swift */; };
+		EB2DAD6D2829C70E00105730 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = EB2DAD6B2829C41100105730 /* Fonts */; };
 		EB30906427FE086800A5C045 /* Resolve_Los_Angeles_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30906327FE086800A5C045 /* Resolve_Los_Angeles_AppApp.swift */; };
 		EB30906627FE086800A5C045 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30906527FE086800A5C045 /* ContentView.swift */; };
 		EB30906827FE086A00A5C045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB30906727FE086A00A5C045 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 		EB19BA6828079CAE00D4426A /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		EB19BA6A28079DAC00D4426A /* CartMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartMonitor.swift; sourceTree = "<group>"; };
 		EB19BA6C2807AFA100D4426A /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		EB2DAD672829BEF600105730 /* DonateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateView.swift; sourceTree = "<group>"; };
+		EB2DAD6B2829C41100105730 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = "Resolve Los Angeles App/Fonts"; sourceTree = "<group>"; };
 		EB30906027FE086800A5C045 /* Resolve Los Angeles App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Resolve Los Angeles App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB30906327FE086800A5C045 /* Resolve_Los_Angeles_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolve_Los_Angeles_AppApp.swift; sourceTree = "<group>"; };
 		EB30906527FE086800A5C045 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +69,7 @@
 				EB19BA5C2807631D00D4426A /* ShopView.swift */,
 				EB19BA5E2807711C00D4426A /* MissionView.swift */,
 				EB19BA602807717700D4426A /* OurStoryView.swift */,
+				EB2DAD672829BEF600105730 /* DonateView.swift */,
 				EB19BA642807725E00D4426A /* ContactUsView.swift */,
 				EB19BA622807722100D4426A /* DocumentationView.swift */,
 				EB19BA6828079CAE00D4426A /* CartView.swift */,
@@ -75,6 +80,7 @@
 		EB30905727FE086800A5C045 = {
 			isa = PBXGroup;
 			children = (
+				EB2DAD6B2829C41100105730 /* Fonts */,
 				EB30906227FE086800A5C045 /* Resolve Los Angeles App */,
 				EB30906127FE086800A5C045 /* Products */,
 			);
@@ -191,6 +197,7 @@
 				EB30906B27FE086A00A5C045 /* Preview Assets.xcassets in Resources */,
 				EBE96C96280671A000560DD6 /* spinslow.gif in Resources */,
 				EB30906827FE086A00A5C045 /* Assets.xcassets in Resources */,
+				EB2DAD6D2829C70E00105730 /* Fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +219,7 @@
 				EB30906427FE086800A5C045 /* Resolve_Los_Angeles_AppApp.swift in Sources */,
 				EBE96CA02807571F00560DD6 /* ProductCard.swift in Sources */,
 				EB19BA612807717700D4426A /* OurStoryView.swift in Sources */,
+				EB2DAD682829BEF600105730 /* DonateView.swift in Sources */,
 				EB19BA6B28079DAC00D4426A /* CartMonitor.swift in Sources */,
 				EB19BA672807983000D4426A /* CartButton.swift in Sources */,
 				EB19BA632807722100D4426A /* DocumentationView.swift in Sources */,

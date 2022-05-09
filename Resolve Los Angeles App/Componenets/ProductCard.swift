@@ -17,7 +17,7 @@ struct ProductCard: View {
         Image(product.image)
                 .resizable()
                 .cornerRadius(20)
-                .frame(width: 180)
+                .frame(width: 350)
                 .scaledToFit()
             
             VStack(alignment: .leading) {
@@ -28,11 +28,11 @@ struct ProductCard: View {
                     .font(.caption)
             }
             .padding()
-            .frame(width: 180, alignment: .leading)
+            .frame(width: 350, alignment: .leading)
             .background(.ultraThinMaterial)
             .cornerRadius(20)
         }
-        .frame(width: 180, height: 250)
+        .frame(width: 350, height: 250)
         .shadow(radius: 3)
         
             Button {

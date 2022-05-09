@@ -46,6 +46,16 @@ struct ContentView: View {
                             .padding(.bottom, 7)
                     }
                     
+                    NavigationLink(destination: DonateView()){
+                        Text("DONATE")
+                            .foregroundColor(Color.black)
+                            .frame(maxWidth: .infinity, maxHeight: 65)
+                            .background(Color.white)
+                            .cornerRadius(15)
+                            .padding([.leading, .trailing], 10)
+                            .padding(.bottom, 10)
+                    }
+                    
                     NavigationLink(destination: MissionView()){
                         Text("MISSION")
                             .foregroundColor(Color.black)
@@ -85,7 +95,6 @@ struct ContentView: View {
                             .padding([.leading, .trailing], 10)
                             .padding(.bottom, 10)
                     }
-                    
                     
                     
                     
